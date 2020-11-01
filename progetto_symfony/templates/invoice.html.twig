@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Invoice{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        {{ form_start(form) }}
+        {{ form_row(form.numberInvoice) }}<br>
+        {{ form_row(form.dateInvoice) }}<br>
+        {{ form_row(form.description) }}<br>
+        {{ form_row(form.quantity) }}<br>
+        {{ form_row(form.amount) }}<br>
+        {{ form_row(form.amountIVA) }}<br>
+        {{ form_row(form.totalIVA) }}<br>
+        {{ form_row(form.submit) }}
+        {{ form_end(form) }}
+    </body>
+</html>
